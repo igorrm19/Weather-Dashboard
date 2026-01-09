@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
+    <title>Duo Weather - Painel de Previsão do Tempo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container" id="container"></div>
+    <header class="header">
+        <h1>Duo Weather</h1>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <form id="search-form" class="search-form">
+                <input type="text" id="city-input" placeholder="Digite o nome da cidade..." required>
+                <button type="submit" id="search-button">Buscar</button>
+            </form>
+            <div id="search-history" class="search-history">
+
+            </div>
+        </section>
+
+        <section id="current-weather" class="current-weather">
+
+            <div class="loader hidden">Carregando...</div>
+        </section>
+
+        <section id="forecast-section" class="forecast-section">
+            <h2>Previsão para 5 Dias</h2>
+            <div id="forecast-container" class="forecast-container">
+                < </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Duo Weather - Sua agência de viagens</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 

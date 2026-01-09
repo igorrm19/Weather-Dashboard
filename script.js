@@ -143,13 +143,13 @@ function loadHistory() {
 function updateBackground(condition) {
     const body = document.body;
     if (condition === 'Clear') {
-        body.style.background = 'radial-gradient(circle at top right, #1e293b, #f59e0b)';
+        body.style.background = 'linear-gradient(135deg, #fff9c4 0%, #e0f2fe 100%)';
     } else if (condition === 'Rain' || condition === 'Drizzle' || condition === 'Thunderstorm') {
-        body.style.background = 'radial-gradient(circle at top right, #0f172a, #1e293b)';
+        body.style.background = 'linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%)';
     } else if (condition === 'Clouds') {
-        body.style.background = 'radial-gradient(circle at top right, #334155, #0f172a)';
+        body.style.background = 'linear-gradient(135deg, #f1f5f9 0%, #e0f2fe 100%)';
     } else {
-        body.style.background = 'radial-gradient(circle at top right, #1e293b, #0f172a)';
+        body.style.background = 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)';
     }
 }
 
